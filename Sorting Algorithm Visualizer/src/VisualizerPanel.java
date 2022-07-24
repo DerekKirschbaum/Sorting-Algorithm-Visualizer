@@ -93,7 +93,13 @@ public class VisualizerPanel extends javax.swing.JPanel implements Runnable{
 	}
 	
 	public void insertionSort() {
-		
+		for(int i=0; i<indexes.size(); i++) {
+			int x = i;
+			while(x>0 && (indexes.get(x)<indexes.get(x-1))) {
+				swap(x, x-1);
+				x--;
+			}
+		}
 	}
 
 	public void run() {

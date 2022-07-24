@@ -20,7 +20,7 @@ public class VisualizerFrame extends JFrame implements ActionListener {
 	}
 	
 	public void run() {
-		System.out.println("run");
+		//System.out.println("run");
 	}
 	
 	
@@ -33,7 +33,7 @@ public class VisualizerFrame extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == p.shuffle && p.canClick) {
 			p.shuffle();
-			System.out.println("shuffle");
+			//System.out.println("shuffle");
 		} else if(e.getSource() == p.sortSpeed) {
 			if(p.swapSpeed == 12) {
 				p.sortSpeed.setText("Sort Speed (>>)");
@@ -46,12 +46,12 @@ public class VisualizerFrame extends JFrame implements ActionListener {
 				p.swapSpeed = 12;
 			}
 		} else if(e.getSource() == p.bubbleSort && p.canClick) {
-			System.out.println("bubble sort");
+			//System.out.println("bubble sort");
 			p.algorithm = "Bubble Sort";
 			Thread t = new Thread(p);
 			t.start();
 		} else if(e.getSource() == p.insertionSort && p.canClick) {
-			System.out.println("insertion sort");
+			//System.out.println("insertion sort");
 			p.algorithm = "Insertion Sort";
 			Thread t = new Thread(p);
 			t.start();
