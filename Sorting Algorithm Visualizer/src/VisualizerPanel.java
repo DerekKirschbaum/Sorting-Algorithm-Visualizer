@@ -103,7 +103,6 @@ public class VisualizerPanel extends javax.swing.JPanel implements Runnable{
 	}
 
 	public void run() {
-		System.out.println("thread run");
 		canClick = false;
 		
 		if (algorithm.equals("Bubble Sort")) {
